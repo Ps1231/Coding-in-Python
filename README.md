@@ -7,3 +7,10 @@ It has many advantages such as :
 Records can be stored in fast manner and any record can be easily accessed. Details can be generated as per entered PIN number and ID number which is settled as primary key in the table so that no duplicate entry can be maintained against customer ID.
 
 “Bank Management System” has been prepared to reduce manual work and with the help of this project account details of customers can be accessed easily and total balance can be calculated automatically in fast manner.
+
+"SONI VOICE ASSISTANCE"
+
+Console Application which help to do your daily work routine.
+It can search on wikipedia.
+It can open YouTube, Spotify, Whatsapp (if installed on your pc) and other cool stuff.
+You can easily add your command.
