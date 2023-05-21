@@ -2,13 +2,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import mysql.connector as mysql
-import pymysql
-from sqlalchemy import create_engine
+
 mycon=mysql.connect(host="127.0.0.1",user="root",passwd="Rashi@2003",database="priyanshi")
 print(mycon)
 MY=mycon.cursor()
-engine=create_engine('mysql+pymysql://root@127.0.0.1/priyanshi')
-conn=engine.connect()
+
 MY.execute('CREATE TABLE IF NOT EXISTS customers (Id INT AUTO_INCREMENT PRIMARY KEY,Name varchar(50), Balance float(9), Pin int(4),City varchar(50), State varchar(50),  Created_On TIMESTAMP DEFAULT CURRENT_TIMESTAMP)')
 
 deposition = 0
@@ -63,7 +61,7 @@ while True:
                    
                     deposition = input("Please input a value to deposit to start an account : ")
                     sql = " INSERT INTO customers (Name,Balance,Pin, City, State) VALUES (%s, %s, %s, %s, %s)" #for string input use %s for number we use %d for %f
-                    val = (name,pin,deposition, city, state)
+                    val = (name,deposition,pin, city, state)
                     MY.execute(sql, val)
                     mycon.commit()
 
