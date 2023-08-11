@@ -1,3 +1,7 @@
+# Coding-in-Python
+
+"Some basic python pracice programs for any beginner in Python-Coding-Practice.ipynb file more than 80+ questions to have a strong grip on fundamentals and some beginner friendly projects "
+
 "BANK MANAGEMENT SYSTEM"
 
 This project helps to create bank accounts of the customers in python as per details enter by them as an input and stores the corresponding records of customers in particular table called customers created in mysql console through sql connectivity and these records can be easily accessed by the customers (only their own details) or bankers (details except security pin of customers) from the same table. Also, after performing certain tasks related to transaction i.e withdrawal and deposition of money,creating other bank accounts; corresponding changes in accounts and balances will automatically save into the same table customers i.e table will update automatically . Same records will be accessed for showing banking statistics through Matplotlib library and other details from the created table customers.
